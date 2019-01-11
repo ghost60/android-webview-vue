@@ -60,18 +60,13 @@ public class MainActivity extends AppCompatActivity {
         webSettings.setJavaScriptEnabled(true);// 支持JS
         webSettings.setCacheMode(WebSettings.LOAD_CACHE_ELSE_NETWORK); //设置缓存
         webSettings.setJavaScriptCanOpenWindowsAutomatically(true);//支持通过js打开新的窗口
-//        webSettings.setRenderPriority(WebSettings.RenderPriority.HIGH);//提高渲染等级
         webSettings.setBuiltInZoomControls(false);// 设置支持缩放
         webSettings.setDomStorageEnabled(true);//使用localStorage则必须打开
-//        webSettings.setBlockNetworkImage(true);// 首先阻塞图片，让图片不显示
-//        webSettings.setBlockNetworkImage(false);//  页面加载好以后，在放开图片：
         webSettings.setSupportMultipleWindows(false);// 设置同一个界面
-//        webSettings.setCacheMode(1);
         webSettings.setNeedInitialFocus(false);// 禁止webview上面控件获取焦点(黄色边框)
         webSettings.setDatabaseEnabled(true);
         webSettings.setAppCacheEnabled(true);
         webSettings.setAllowFileAccess(true);
-        webSettings.setSavePassword(true);
         webSettings.setSupportZoom(true);
         webSettings.setLayoutAlgorithm(WebSettings.LayoutAlgorithm.NARROW_COLUMNS);
         webSettings.setUseWideViewPort(true);
